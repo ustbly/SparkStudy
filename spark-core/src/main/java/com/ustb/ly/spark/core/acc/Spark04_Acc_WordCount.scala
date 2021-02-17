@@ -8,7 +8,7 @@ import scala.collection.mutable
 object Spark04_Acc_WordCount {
   def main(args: Array[String]): Unit = {
 
-    val sparkConf: SparkConf = new SparkConf().setMaster("local").setAppName("Persist")
+    val sparkConf: SparkConf = new SparkConf().setMaster("local").setAppName("Acc")
     val sc = new SparkContext(sparkConf)
 
     val rdd = sc.makeRDD(List("hello", "world", "hello"))
